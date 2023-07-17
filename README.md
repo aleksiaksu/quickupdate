@@ -1,6 +1,6 @@
 Quickupdate is a script for updating Debian-based distrobutions.
 
-The script verifies the presence of `apt`, `flatpak`, and `snap` on the system and proceeds to install updates.
+The script verifies the presence of `apt`, `flatpak`, and `snap` on the system and proceeds to install updates from known package managers.
 
 To install and use this script, run:
 ```
