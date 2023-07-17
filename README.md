@@ -6,6 +6,6 @@ To install and use this script, run:
 ```
 mkdir -p ~/.local/bin
 source ~/.profile
-wget -O ~/.local/bin/quickupdate https://aleksiaksu.github.io/quickupdate/quickupdate
+wget -O ~/.local/bin/quickupdate https://aleksiaksu.github.io/quickupdate/quickupdate && chmod +x ~/.local/bin/quickupdate
 quickupdate
 ```
