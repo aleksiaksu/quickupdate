@@ -1,0 +1,24 @@
+#!/bin/bash
+echo "---"
+echo "quickupdate"
+echo "by github/aleksiaksu"
+echo "License: CC0"
+echo "---"
+echo "Searching apt and updating..."
+if command -v apt &> /dev/null
+then
+sudo bash -c "apt update && apt -y upgrade"
+fi
+echo "---"
+echo "Searching flatpak and updating..."
+if command -v flatpak &> /dev/null
+then
+sudo bash -c "flatpak update -y"
+fi
+echo "---"
+echo "Searching snap and updating..."
+if command -v snap &> /dev/null
+then
+sudo bash -c "snap refresh"
+fi
+echo "---"
