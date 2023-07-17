@@ -4,6 +4,6 @@ The script verifies the presence of `apt`, `flatpak`, and `snap` on the system a
 
 To install and use this script, run:
 ```
-wget -O /usr/local/bin/quickupdate https://aleksiaksu.github.io/quickupdate/quickupdate && chmod +x /usr/local/bin/quickupdate
+sudo bash -c 'wget -O /usr/local/bin/quickupdate https://aleksiaksu.github.io/quickupdate/quickupdate && chmod +x /usr/local/bin/quickupdate'
 quickupdate
 ```
