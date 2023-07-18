@@ -4,21 +4,30 @@ echo "quickupdate"
 echo "by github/aleksiaksu"
 echo "License: CC0"
 echo "---"
-echo "Searching apt and updating..."
+echo "Searching apt..."
 if command -v apt &> /dev/null
 then
+echo "Updating using apt..."
 sudo bash -c "apt update && apt -y upgrade"
+else
+echo "apt is not found, skipped..."
 fi
 echo "---"
-echo "Searching flatpak and updating..."
+echo "Searching flatpak..."
 if command -v flatpak &> /dev/null
 then
+echo "Updating using flatpak..."
 sudo bash -c "flatpak update -y"
+else
+echo "flatpak is not found, skipped..."
 fi
 echo "---"
-echo "Searching snap and updating..."
+echo "Searching snap..."
 if command -v snap &> /dev/null
 then
+echo "Updating using snap..."
 sudo bash -c "snap refresh"
+else
+echo "snap is not found, skipped..."
 fi
 echo "---"
