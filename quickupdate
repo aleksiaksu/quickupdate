@@ -10,7 +10,7 @@ then
 echo "Updating using apt..."
 sudo bash -c "apt update && apt -y upgrade"
 else
-echo "apt is not found, skipped..."
+echo "apt not found, skipped..."
 fi
 echo "---"
 echo "Searching flatpak..."
@@ -19,7 +19,7 @@ then
 echo "Updating using flatpak..."
 sudo bash -c "flatpak update -y"
 else
-echo "flatpak is not found, skipped..."
+echo "flatpak not found, skipped..."
 fi
 echo "---"
 echo "Searching snap..."
@@ -28,6 +28,6 @@ then
 echo "Updating using snap..."
 sudo bash -c "snap refresh"
 else
-echo "snap is not found, skipped..."
+echo "snap not found, skipped..."
 fi
 echo "---"
